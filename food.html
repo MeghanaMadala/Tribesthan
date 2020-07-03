@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Gallery</title>
+<style>
+img
+{
+width: 300px;
+height:200px;
+}
+th
+{
+font-size: 1.5cm;
+background-color: orange;
+padding: 20px;
+}
+body{
+font-family: sans-serif;
+font-size: 1cm;
+text-align: center;
+}
+table
+{
+font-family:cursive; 
+font-size:20px;
+background-color: black;
+color:white;
+width: 60%;
+}
+td{
+padding: 25px;
+}
+ima
+{
+width:1346px;
+height:200px;
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
+</head>
+
+<body>
+<table align="center" color="black";>
+<tr>
+<th colspan="4"><img src="food5.jpg" class="ima" align="left";>Famous Dishes of<br> Our Tribes</th>
+</tr>
+
+<tr>
+<td colspan="4"></td>
+</tr>
+
+<tr>
+<td><a href="food.jpg" target="_blank"><img src="food.jpg"></a>
+<br>Fresh Fruits of<br> All Varieties</td>
+<td><a href="food2.jpg" target="_blank"><img src="food2.jpg"></a><br>Honey Potato<br>KASHMIR</td>
+<td><a href="grilled.jpg" target="_blank"><img src="grilled.jpg"></a><br>Barbecued Fish<br>KERALA</td>
+<td><a href="gondpak.jpg" target="_blank"><img src="gondpak.jpg"></a><br>Gondpak(Dessert)<br>JHARKHAND</td>
+
+</tr>
+<tr>
+<td><a href="bamboochicken.jpg" target="_blank"><img src="bamboochicken.jpg"></a><br>Bamboo Chicken<br>ARAKU</td>
+<td><a href="food1.webp" target="_blank"><img src="food1.webp"></a><br>Bheegi Bagi<br>ASSAM</td>
+<td><a href="food3.jpg" target="_blank"><img src="food3.jpg"></a><br>Zumpagi Pav<br>MIZORAM</td>
+<td><a href="food4.jpg" target="_blank"><img src="food4.jpg"></a><br>Bilam Pakan<br>PUNJAB</td>
+</tr>
+</table>
+<div>
+<button class="glow-on-hover" type="button" onclick="location.href='tour.html'">HOME</button></div>
+</body>
+</html>

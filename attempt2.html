@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset="utf-8">
+<title>team section</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+.team-section{
+overflow: hidden;
+text-allign: center;
+background: black;
+padding: 60px;
+}
+.team-section h1{
+text-transform: uppercase;
+margin-bottom: 60px;
+color: white;
+font-size: 40px;
+}
+.border{
+display: block;
+margin: auto;
+width: 160px;
+height: 3px;
+background: red;
+margin-bottom: 40px;
+}
+.ps{
+margin-bottom: 40px;
+}
+.ps a{
+display: inline-block;
+margin: 0 30px;
+width: 160px;
+height: 160px;
+overflow: hidden;
+border-radius: 50%;
+}
+.ps a img{
+width: 100%;
+filter: grayscale(100%);
+transition: 0.4s all;
+}
+.ps a:hover > img{
+filter: none;
+}
+.section{
+width: 600px;
+margin: auto;
+font-size: 20px;
+color: white;
+text-allign: justify;
+height: 0;
+overflow: hidden;
+}
+.section:target{
+height: auto;
+}
+.name{
+display: block;
+margin-bottom: 30px;
+text-allign:center;
+text-transform: uppercase;
+font-size: 22px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="team-section">
+<h1><center> Our Team</center> </h1>
+<span class="border"></span>
+<div class="ps">
+<a href="#p1"><img src="p1.png" alt=""></a>
+<a href="#p2"><img src="p2.png" alt=""></a>
+<a href="#p3"><img src="p3.png" alt=""></a>
+<a href="#p4"><img src="p4.png" alt=""></a>
+</div>
+
+<div class="section" id="p1">
+<span class="name"> Meghana </span>
+<span class="border"></span>
+<p>
+Hey there folks! I am Meghana Madala. I got into Top 30 best poetry list. U can congratulate me.
+</p>
+</div>
+
+<div class="section" id="p2">
+<span class="name"> Deepika </span>
+<span class="border"></span>
+<p>
+Hey there folks! I am Deepika. not deepika padukone.I am quite opposite from her. I am too short and cute on a small scale.
+</p>
+</div>
+
+<div class="section" id="p3">
+<span class="name"> Mrudula </span>
+<span class="border"></span>
+<p>
+Hey there folks! I am Mrudula.I usually dont talk much, so it's hard for Jaya to write something on me.
+</p>
+</div>
+
+<div class="section" id="p4">
+<span class="name"> Jaya </span>
+<span class="border"></span>
+<p>
+Hey there folks! I am Jaya.I am thope n thope I am. Ok bye!
+</p>
+</div>
+</body>
+</html>

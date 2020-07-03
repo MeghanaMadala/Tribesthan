@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Photo Gallery</title>
+<style>
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+img
+{
+width: 300px;
+height:200px;
+}
+th
+{
+font-size: 1.5cm;
+background-color: #0FF7B3;
+padding: 20px;
+}
+body{
+font-family:verdana;
+font-size: 0.5cm;
+text-align: center;
+background-color:white;
+}
+table
+{
+background-color: black;
+color:white;
+width: 60%;
+}
+td{
+padding: 25px;
+}
+
+
+</style>
+</head>
+
+<body>
+<table align="center">
+<tr>
+<th colspan="4">PHOTO GALLERY</th>
+</tr>
+
+<tr>
+<td colspan="4">MOST POPULAR DESTINATIONS</td>
+</tr>
+
+<tr>
+<td><a href="tour.jpg" target="_blank"><img src="tour.jpg"></a>
+<br>Pawna Lake</td>
+<td><a href="lambasingi.jpg" target="_blank"><img src="lambasingi.jpg"></a><br>Forest & Woods</td>
+<td><a href="lambasingi1.jpg" target="_blank"><img src="lambasingi1.jpg"></a><br>Lambasingi Snow</td>
+<td><a href="gallery2.jpg" target="_blank"><img src="gallery2.jpg"></a><br>Native Dance</td>
+
+</tr>
+<tr>
+<td><a href="gallery3.jpg" target="_blank"><img src="gallery3.jpg"></a><br>Voodo</td>
+<td><a href="camping1.jpg" target="_blank"><img src="camping1.jpg"></a><br>Open Air Gym</td>
+<td><a href="camping2.jpg" target="_blank"><img src="camping2.jpg"></a><br>Star Gazing</td>
+<td><a href="gallery.jpg" target="_blank"><img src="gallery.jpg"></a><br>Fortune Telling</td>
+</tr>
+<tr>
+<td><a href="gallery4.jpg" target="_blank"><img src="gallery4.jpg"></a><br>Native Style</td>
+<td><a href="gallery5.jpg" target="_blank"><img src="gallery2.jpg"></a><br>Zumba Dance</td>
+<td><a href="gallery6.jpeg" target="_blank"><img src="gallery6.jpeg"></a><br>Sunrise</td>
+<td><a href="gallery7.jpg" target="_blank"><img src="gallery7.jpg"></a><br>Mountain View</td>
+</tr>
+</table>
+<div>
+<button class="glow-on-hover" type="button" onclick="location.href='tour.html'">HOME</button></div>
+</body>
+</html>
