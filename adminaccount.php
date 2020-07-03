@@ -77,7 +77,7 @@ left: 10px;
 else
 {?>
 <center><h2>SORRY!YOU ARE NOT LOGGED IN!</h2></center>
-<a href="headerpage.html"><button class="button" style="magin:0 auto;">Back to home </button></a>
+<a href="index.html"><button class="button" style="magin:0 auto;">Back to home </button></a>
 
 <?php
 }
